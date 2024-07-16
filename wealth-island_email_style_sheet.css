@@ -1,0 +1,154 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	word-wrap:break-word;
+}
+
+body{
+	position: relative;
+	margin:0 5px;
+	padding:0;
+	font-size:1.2em;
+	font-family: sans-serif,verdana,lucinda,Arial;  /*"Open Sans","Trebuchet ms","Helvetica CY","Nimbus Sans L",sans-serif*/
+	color:#253529;
+	background:#1d2b34;
+	background-image:url("http://eurotech.6te.net/eurotech-images/icons/site_bkg.png");
+					
+}
+
+a{
+ outline:0;
+ text-decoration:none;
+	
+}
+
+a:active, a:focus,a:hover{
+	
+	background:rgba(200, 50, 0, 1);
+	text-decoration:none;
+	color:#fff;
+	
+}
+
+a:link,a:visited{
+	
+	color:#181899;
+}
+
+
+
+ul{
+    padding:0;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+
+hr{
+	border:none;
+	border-bottom: 1px solid #a9a9a9;
+	border-top: 1px solid #696969;
+	
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	margin:5px 0;
+	padding: 0 3px;
+	
+}
+
+
+
+input,select,textarea,button{
+	
+	border:1px solid #c0c0c0;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+}
+
+div.email_wrapper{
+	border:1px solid #c0c0c0;
+	background
+}
+
+div.email_header{
+	text-align:center;
+}
+
+div.email_content{
+	white-space:pre-wrap;
+	background:#c0c0c0;
+	font-size:17px;
+}
+
+div.email_footer{
+	max-width:1100px;
+	text-align:center;
+	background:#E8ECE0;
+	padding:10px 10px;
+	font-size:0.8em;
+	margin:0 auto;
+	margin-bottom:10px;
+	border:1px solid #c0c0c0;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+}
+
+div.avn_im{
+	font-size:40px;
+	color:#ff0000;
+}		
+		
+.black,#black{
+	
+	color:#253529;
+	
+}
+
+.green{
+	
+	color:#008000;		
+}
+
+.lgreen,#lgreen{
+	color: #396;
+}
+
+
+.blue,#blue{
+	color:#0000ff;
+}
+
+.red,#red{
+	color:#ff0000;
+	
+}
+
+.yellow,#yellow{
+	
+	color:#F4A460;
+}
+
+.white,#white{
+	color:#fff;
+	
+}
+
+.dkred{
+	
+	color:#930801;
+}
+
+.cyan,#cyan{
+	
+	color:#9932CC;
+}
+
+.gold{
+	color:#808000;
+}			

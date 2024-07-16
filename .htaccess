@@ -1,0 +1,62 @@
+
+#prevent directory file listing
+#IndexIgnore *
+
+
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+
+######## TURN ON REWRITING ENGINE
+RewriteEngine on
+
+####### RENDER PAGES WITHOUT EXTENSION
+
+Options +FollowSymLinks +MultiViews
+
+##RewriteCond %{REQUEST_FILENAME} !-f [NC]
+
+##RewriteRule ^([^\.]+)$  $1.php [NC,L]
+
+
+
+
+############# REDIRECT TO GOOGLE VIA SEARCH.PHP
+##RewriteCond %{REQUEST_URI} /(www\.)?google.(com|net) [NC]
+
+##RewriteRule ^(www\.)?google.(com|net)(.*)$ http://www.google.com$3 [R=301,NC,L,QSA]
+
+
+
+
+
+######### BLOCK HOT LINKING(INLINE LINKING)
+
+#RewriteCond %{HTTP_REFERER} !^localhost [NC]
+
+#RewriteRule  \.(jpe?g|png|bmp) http://localhost/EUROWEBS2/testbird.jpg [NC]
+
+
+##RewriteCond %{REQUEST_URI} ^[(http://)?localhost/EUROWEBS3/users]$ [NC]
+
+##RewriteRule ^users/(.*)$ user-profile.php?cuser=$1 [NC,L]
+
+
+##RewriteCond %{REQUEST_URI} /view-profile [NC]
+
+##RewriteRule ^view-profile(.*)?$ http://localhost/EUROWEBS2/change-email.php?cuser=$1 [NC]
+
+
+
+
+
+######custom page not found handler
+
+######ErrorDocument 404 /page-error.php
+
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+
+#RewriteRule (.*)  http://wealth-island.000webhostapp.com/page-error [NC]
+RewriteRule (.*)  http://localhost/WEALTH/page-error [NC]

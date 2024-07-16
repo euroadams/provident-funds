@@ -1,0 +1,454 @@
+
+
+
+/*//////////////RESPONSIVE PARTS//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:1120px){
+	
+	header.top_nav,nav.top_nav_drop,header.mainnav,div.view_user_wrapper,.footer{
+		border:none;
+		border-radius:0;
+		border-radius:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		
+	}
+	
+	nav.top_nav_drop{
+		width:100%;/*//FULL WIDTH////////////*/
+	}
+	
+	nav.slide_drop_wrapper{
+		width:100%;
+	}
+	
+	body{
+		margin:0;
+	}
+	
+	div.view_user_wrapper,#footer{
+		
+	}
+}
+
+
+@media only screen and (min-width:1000px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;
+
+
+}
+
+.upload_input{
+	
+	width:70%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding-top:8px;
+	padding-bottom:35px;
+	margin-right:10px;
+	
+}
+
+
+a.current_tab{
+	
+	border-bottom:6px solid #ff0000;
+
+}
+
+
+div.pagination a,#current_page{
+	
+	padding:10px;
+}
+
+
+div.dropping_arrow,.dropping_arrow_inbox,.dropping_arrow_canc_acc,.dropping_arrow_campaign{display:block;}
+	
+	
+	
+span.delete_post button{padding:5px;}	
+
+div.midpage_scroll{right:10px;}
+
+@media only screen and (min-width:1100px){div.midpage_scroll{right:150px;}}
+
+
+	
+}
+
+
+
+
+@media only screen and (min-width:700px) and (max-width:999px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*600px;*/
+
+}
+
+.upload_input{
+	
+	width:70%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding-top:5px;
+	padding-bottom:30px;
+	margin-right:8px;
+	
+}
+
+div.midpage_scroll{right:10px;}
+
+
+}
+
+
+@media only screen and (min-width:570px) and (max-width:699px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*500px;*/
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	margin-right:6px;
+	
+}
+
+
+div.midpage_scroll{right:10px;}
+
+
+
+	
+}
+
+
+
+@media only screen and (min-width:470px) and (max-width:569px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*400px*/;
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	margin-right:5px;
+	
+}
+
+
+div.midpage_scroll{right:10px;}
+
+.avatar{bottom:0px;}
+	
+}
+
+
+@media only screen and (min-width:370px) and (max-width:469px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*300px;*/
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	margin-right:4px;
+	
+}
+
+
+.buttons{
+	width:150px;
+	padding:10px;
+	
+}
+
+
+
+div.midpage_scroll{right:10px;}
+
+.avatar{bottom:0px;}
+	
+}
+
+
+@media only screen and (min-width:270px) and (max-width:369px){
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*250px;*/
+
+}
+
+
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	margin-right:4px;
+	
+}
+
+.buttons{
+	width:150px;
+	padding:10px;
+	
+}
+
+
+
+div.midpage_scroll{right:10px;}
+
+h1{font-size:1.5em;}
+
+.avatar{bottom:0px;}
+
+	
+}
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:269px){
+	
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*150px;*/
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	margin-right:3px;
+	
+}
+
+
+.buttons{
+	width:130px;
+	padding:6px;
+	
+}
+
+div.midpage_scroll{right:10px;}
+
+h1{font-size:1.5em;}
+
+.avatar{bottom:0px;}
+	
+}
+
+
+
+@media only screen and (min-width:170px) and (max-width:199px){
+	
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*120px;*/
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	
+}
+
+
+.buttons{
+	width:100px;
+	padding:6px;
+	
+}
+
+
+div.midpage_scroll{right:10px; display:none;}
+
+
+h1{font-size:1em;}
+
+.avatar{bottom:0px;}
+
+}
+
+
+
+@media only screen and (min-width:50px) and (max-width:169px){
+	
+	
+.only_form_textarea_inputs,.formTextarea{
+	
+	width:95%;/*100px;*/
+
+}
+
+.upload_input{
+	
+	width:80%;/*400px*/;
+
+}
+
+
+
+div.view_user_wrapper input.formButtons,div.view_user_wrapper button.formButtons,.formButtons{
+	
+	width:100%;
+	padding:0;
+	
+}
+
+
+.buttons{
+	width:70px;
+	padding:6px;
+	
+}
+
+
+div.midpage_scroll{right:10px; display:none;}
+
+h1{font-size:1em;}
+
+.avatar{bottom:0px;}
+
+
+.drop_opened .top_nav_drop {	top: 260px;}
+
+}
+
+
+
+
+@media only screen and (max-width:999px){/*///////SUBNAV ANCHOR PADDING RESPONSIVE//////////////*/
+	
+	header.mainnav a{
+		
+		padding: 3px;
+	}
+	
+	
+}
+
+
+
+@media only screen and (min-width:371px) and (max-width:1100px){
+	
+	
+fieldset{
+	
+	padding-left:50px;
+}	
+
+}
+
+@media only screen and (max-width:370px){
+	
+.view_user_wrapper input.only_form_textarea_inputs,.view_user_wrapper select,.view_user_wrapper input.upload_input{
+		
+		height:30px;
+}
+	
+fieldset{
+	
+	padding-left:5px;
+}	
+	
+}
+
+
+
+@media only screen and (max-width:700px){
+	
+	div#packages_h div.packages{
+		
+		width:100%;
+		display:block;
+		margin-right:10px;
+		
+	}
+	
+	.errors{
+		overflow-x:scroll;
+	}
+}
+
+
+/*///////////////END OF CSS RESPONSIVE///////////////////////////////////////////////*/
+
+

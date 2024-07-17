@@ -2,7 +2,6 @@
 
 
 session_start();
-require_once("forumdb_conn.php");
 require_once("phpfunctions.php");
 
 //////////GET DATABASE CONNECTION///////////////////////

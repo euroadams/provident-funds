@@ -6,42 +6,35 @@ setPageTimeZone();
 //////////////FUNCTIONS TO HANDLE PDO CONNECTIONS////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function pdoConn($type){
+	
+	require_once('.db.config.php');
 
 	static $pdo_conn;
 	static $pdo_conn_login;
 				
-////////////////PDO CONNECTION///////
+	////////////////PDO CONNECTION///////
 
-if(!$pdo_conn instanceof PDO){
-				
-	try{
-		//$pdo_conn = new PDO("mysql:host=sql309.phpnet.us;dbname=pn_19234541_eurotech", "pn_19234541", "adimabua02");//phpnet.us///
-		//$pdo_conn = new PDO("mysql:host=sql100.phpnet.us;dbname=pn_19225500_eurotech", "pn_19225500", "adimabua02");//phpnet.us///
-		
-		if(isset($_SERVER["HTTP_HOST"]) && $_SERVER["HTTP_HOST"] == "provident-funds.test")
-			$pdo_conn = new PDO("mysql:host=provident-funds.test;dbname=wealth", "root", "");  ///localhost///
-		//$pdo_conn_login = new PDO("mysql:host=localhost;dbname=a7499969_login", "root", "");
-		
-		else
-			$pdo_conn = new PDO("mysql:host=localhost;dbname=provid33_wealth", "provid33_pwealth", "PFwealth+P&A_20PFin90");///6te.net/////
-		
+	if(!$pdo_conn instanceof PDO){
+					
+		try{
+			
+			$pdo_conn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USERNAME, DB_PWD);
+			
+			$pdo_conn_login = $pdo_conn;
+			
+			$pdo_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			
+		}
 
-		$pdo_conn_login = $pdo_conn;
-
-		
-		$pdo_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		catch(PDOException $e){
+			
+			echo $e->getMessage();
+			
+			
+			
+		}
 		
 	}
-
-	catch(PDOException $e){
-		
-		echo $e->getMessage();
-		
-		
-		
-	}
-	
-}
 	
 	if($type == "eurotech")
 		return $pdo_conn;
